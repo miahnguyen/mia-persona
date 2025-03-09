@@ -13,6 +13,7 @@ body {
 img {
   display: block;
   margin: 0 auto 20px auto;
+  align-items: center
 }
 
 #staffGallery{
