@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Accessible Components</title>
+    <title>Personas & Storyboarding</title>
     <!-- import CSS styles -->
     <link rel="stylesheet" href="styles.css" /> 
   </head>
@@ -10,106 +10,129 @@
   <!-- page content goes into <body> -->
   <body>
     <div id="logoBar">
-      <h1>Accessible Components: Dropdown Case Study</h1>
-      <h3> In this case study, I conducted research, analysis, and proposed a redesign of dropdown components across multiple applications. </h3>
-      <h2> Why dropdowns? </h2>
-      <h3>Dropdown menus are widely used UI components, yet their accessibility varies across applications. Many dropdowns lack adequate support for keyboard navigation, screen readers, and visual cues for different states, making them difficult for users with disabilities to navigate. </h3>
-      <h2>Component Analysis</h2>
-      <h3>I will analyze existing dropdown implementations in Google Docs, Slack, and Instagram. The scope of this case study is limited to dropdown with a limited set of options. My findings are summarized in the input and output tables below. </h3>
-
-
-      <div id="divideSection">
-
-      <div id="leftSide">
-        <div class="column">
-          <img src="./assets/docs/docs_logo.png" alt="Google Docs logo" width="110"/>
-          <h3 class="underline">Google Docs</h3>
-          <img src="./assets/docs/default.png" alt="Google Docs dropdown component default" width="200"/>
-          <img src="./assets/docs/opened.png" alt="Google Docs dropdown component opened"width="200"/>
+      <h1>Personas & Storyboarding</h1>
+      <h3> In this case study, I stepped into the shoes of everyday users to understand their experiences with public interfaces. By observing real-world interactions and constructing empathy maps, I developed personas and illustrated a complete user journey through a storyboard. </h3>
+      <h2> Interface rationale </h2>
+      <h3>I have chosen a card-swiping kiosk, specifically ones seen in the mailroom. This interface requires users to simply swipe their card to initiate a service. While its operation appears straightforward, real-world observations reveal many moments of uncertainty and frustration. This thus allows me to delve into the nuances of the user experience and uncover both the strengths and challenges of this everyday interface. </h3>
+      <h2>Annotated Sketch</h2>
+      <img src="./assets/interface/sketch.jpg" alt="annotated kiosk interface" width="1000"/>
+    </div>
+    <h2>What do the users think?</h2>
+    <h3>To learn more, I interview three different users of this interface. Below is a summary of my questions and their responses.</h3>
+    <div class="accordion-container">
+      <details>
+        <summary>What are the reasons for you to use this interface?</summary>
+        <div class="accordion-content">
+          To get packages and mail
         </div>
-        <div class="column">
-          <img src="./assets/slack/slack_logo.png" alt="Slack logo" width="150"/>
-          <h3 class="underline">Slack</h3>
-          <img src="./assets/slack/default.png" alt="Slack dropdown component default" width="200"/>
-          <img src="./assets/slack/opened.png" alt="Slack dropdown component opened" width="200"/>
+      </details>
+
+      <details>
+        <summary>How easy or difficult was it to complete your task using the kiosk?</summary>
+        <div class="accordion-content">
+          Overall, the process is straightforward once you’re familiar with it, but there are usually technical glitches—like the card reader failing to recognize my ID
         </div>
-        <div class="column">
-          <img src="./assets/instagram/ig_logo.png" alt="Instagram logo" width="150"/>
-          <h3 class="underline">Instagram</h3>
-          <img src="./assets/instagram/default.png" alt="Instagram dropdown component default" width="200"/>
-          <img src="./assets/instagram/opened.png" alt="Instagram dropdown component opened" width="200"/>
+      </details>
+
+      <details>
+        <summary>Were there any moments when you felt unsure about what to do next? If so, can you describe them?</summary>
+        <div class="accordion-content">
+          When the card swipe does not go through, I would assume that the kiosk was unusable and go to a different kiosk. For the first few times retrieving my package, this really confused me.
         </div>
+      </details>
+
+      <details>
+        <summary>How do you feel about the response time of the kiosk (e.g., card scanning, screen transitions)?</summary>
+        <div class="accordion-content">
+          Good timing if the card works, but can be slightly slow during transitions between the swiping screen and the package retrieval screen.
+        </div>
+      </details>
+
+      <details>
+        <summary>Have you ever encountered an issue where the kiosk didn’t work as expected? If yes, what happened, and how did you resolve it?</summary>
+        <div class="accordion-content">
+          I will usually try other ways, including trying to swipe in the other direction, switch kiosks, or ask for help from a friend.
+        </div>
+      </details>
+
+      <details>
+        <summary>What, if anything, frustrates you about using this kiosk?</summary>
+        <div class="accordion-content">
+          When it doesn’t read the cards correctly, especially when I’m in a hurry. It also feels outdated compared to app-based or contactless systems out there.
+        </div>
+      </details>
+
+      <details>
+        <summary>If you could change one thing about the kiosk to improve your experience, what would it be?</summary>
+        <div class="accordion-content">
+          For the card reader to register swipes better. 
+        </div>
+      </details>
+
+      <details>
+        <summary>Is there any feature or function you wish this kiosk had?</summary>
+        <div class="accordion-content">
+          An alternative way to swiping (e.g. scanning), or an option to schedule to receive packages after some time (ex. 5 mins, 1 hour). 
+        </div>
+      </details>
+    </div>
+    <!-- code reference: https://www.w3schools.com/TAGs/tag_summary.asp -->
+    <h2>Constructing Personas</h2>
+    <h3>Using the observations and interviews so far, I constructed 2 personas by creating four-quadrant empathy maps.</h3>
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img src="./assets/interface/jolie.png" style="width:100%">
+        <div class="text">Jolie is an eager online shopper who gets excited whenever she receives a package notification. As soon as she gets the email, she heads straight to the mailroom. She is also a new student at Brown, and is not too familiar with the kiosk system here.</div>
       </div>
 
-      <div id="rightSide">
-        <div class="category">
-          <h3 class="underline">Inputs</h3>
-          <img src="./assets/tables/inputs.png" alt="Inputs diagram" width="900"/>
-        </div>
-        <div class="category">
-          <h3 class="underline">Outputs</h3>
-          <img src="./assets/tables/outputs.png" alt="Outputs diagram" width="900"/>
-        </div>
+      <div class="mySlides fade">
+        <img src="./assets/interface/ethan.png" style="width:100%">
+        <div class="text">Ethan is a busy college student who often forgets about his packages until they start piling up at the mailroom. He gets annoyed by how long it takes and struggles with swiping his card correctly. If the mailroom is too crowded, he just leaves and decides to try again another day—even if it means delaying picking up important items.</div>
       </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
-      <h2>State Model Development</h2>
-        <h3>Mapping transitions between different states of the dropdown component for both keyboard and mouse users of the application. The revised version (changes shown in red) proposes a key change: an <strong>improved hover state</strong> that makes the selection process more efficient. </h3>
-        <div id="stateModelContainer">
-          <div class="column">
-            <img src="./assets/state-models/keyboard-user.png" alt="Original keyboard user" class="state-image"/>
-            <img src="./assets/state-models/revised-keyboard.png" alt="Revised keyboard user" class="state-image"/>
-          </div>
+    <br>
 
-          <div class="column">
-            <img src="./assets/state-models/mouse-user.png" alt="Original mouse user" class="state-image"/>
-            <img src="./assets/state-models/revised-mouse.png" alt="Revised mouse user" class="state-image"/>
-          </div>
-        </div>
-      <h2>Component Redesign</h2>
-      <h3><p><strong>🔹 Key Changes:</strong> Higher contrast, improved focus indicators, clearer selection.</p></h3>
-
-      <img id="redesignImage" src="./assets/redesign/redesign.png" alt="Redesigned component" style="display: block; margin: 0 auto;" width="500"/>
-
-      <div class="text-container">
-      <h2>Reflection</h2>
-      <ul>
-      <li><strong>Accessibility:</strong> 
-        <ul>
-          <li>Provided clear visual indicators (e.g., borders, highlights) to help users identify interactive elements.</li>
-        </ul>
-      </li>
-      <li><strong>Usability:</strong> 
-        <ul>
-          <li>Ensured keyboard navigability and that screen reader-friendly labels are used, allowing users to tab through options and make selections.</li>
-        </ul>
-      </li>
-      <li><strong>Improve accessibility gaps:</strong>
-        <ul>
-          <li>Better contrast and visibility: The original grey dropdown blended into the background, making it difficult for low-vision users to identify. Changing it to white significantly improves readability.</li>
-          <li>Stronger visual feedback for selection: The open state now has a clearer focus shadow, ensuring users understand which option is currently active.</li>
-        </ul>
-      </li>
-      <li><strong>Mismatch solution:</strong>
-        <ul>
-          <li>Many dropdowns don’t provide enough visual contrast, making them inaccessible for users with low vision or color blindness. By increasing the contrast, my design ensures better usability for everyone.</li>
-          <li>For neurodivergent users who rely on consistent and strong visual cues, the new dropdown state provides a clearer and more predictable interaction.</li>
-        </ul>
-      </li>
-      <li><strong>Keyboard inputs:</strong>
-        <ul>
-          <li>Having the option for users to navigate the site entirely by keyboard makes the site significantly more accessible, especially for users that struggle with precise movements required by mouse and touchpad.</li>
-          <li>At the same time, some keyboard shortcuts are complex and require multiple keys to be simultaneously pressed, which may unintentionally exclude users that cannot perform complex motor tasks.</li>
-        </ul>
-      </li>
-      <li><strong>Prioritization:</strong> 
-        <ul>
-          <li>Many components are designed with mouse or touch users in mind, leaving keyboard users with a subpar experience when it comes to navigating the different functionalities of a webpage / application.</li>
-        </ul>
-      </li>
-    </ul>
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
     </div>
 
-  </body>
+    <script>
+      let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+    </script>
+    <!-- code reference: https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+    <h2> Storyboard </h2>
+    <h3>Through the persona "Jolie", I created a storyboard documenting her entire user journey with this interface.</h3>
+    <img src="./assets/interface/storyboard.png" alt="storyboard" width="1000"/>
+
+</body>
   <footer>
     <p>© 2025 Mia Nguyen</p>
   </footer>

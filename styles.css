@@ -1,6 +1,6 @@
 #logoBar{
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
 }
 #siteLogo{
   width: 100%;
@@ -9,6 +9,12 @@ body {
   display: block;
   width: 100%
 }
+
+img {
+  display: block;
+  margin: 0 auto 20px auto;
+}
+
 #staffGallery{
   width: 70vw;
   display: inherit;
@@ -26,14 +32,6 @@ body {
   gap: 40px;
   width: 40%; 
 }
-
-/* #divideSection {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  width: 90%;
-  margin: 0 auto;
-} */
 
 /* Change to vertical alignment*/
 #divideSection {
@@ -129,14 +127,14 @@ h1 {
   text-align: center; 
   width: 100%; 
   margin: 20px 0; 
-  font-family: Optima, sans-serif	;
+  font-family: "Georgia", sans-serif	;
 }
 h2 {
   font-size: 40px;
   text-align: center; 
   width: 100%; 
   margin: 20px 0; 
-  font-family: Optima, sans-serif	;
+  font-family: "Open Sans", sans-serif	;
 }
 h3 {
   font-family: Georgia, serif	;
@@ -144,7 +142,7 @@ h3 {
   width: 70%;
   margin: 0 auto;
   text-align: center;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 .text-container {
@@ -167,4 +165,99 @@ ul ul {
 
 li {
   padding-bottom: 5px;
+}
+
+.accordion-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.accordion-content {
+  margin-top: 10px;
+  padding-left: 15px;
+}
+summary {
+  cursor: pointer;
+  font-weight: bold;
+  outline: none;
+}
+
+details {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+* {box-sizing:border-box}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+/* .mySlides {
+  display: none;
+} */
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 30px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Caption text */
+.text {
+  color: #000000;
+  font-size: 19px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
