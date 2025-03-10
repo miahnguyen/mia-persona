@@ -13,7 +13,8 @@ body {
 img {
   display: block;
   margin: 0 auto 20px auto;
-  align-items: center
+  align-items: center;
+  max-width: 90%;
 }
 
 #staffGallery{
@@ -198,11 +199,6 @@ details {
   position: relative;
   margin: auto;
 }
-
-/* Hide the images by default */
-/* .mySlides {
-  display: none;
-} */
 
 /* Next & previous buttons */
 .prev, .next {
