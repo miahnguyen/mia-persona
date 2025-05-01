@@ -9,15 +9,26 @@
 
   <!-- page content goes into <body> -->
   <body>
+    <nav>
+    <ul>
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#rationale">Interface Rationale</a></li>
+      <li><a href="#sketch">Annotated Sketch</a></li>
+      <li><a href="#user-thoughts">User Interviews</a></li>
+      <li><a href="#personas">Personas</a></li>
+      <li><a href="#storyboard">Storyboard</a></li>
+    </ul>
+  </nav>
+  <div class="content">
     <div id="logoBar">
       <h1>Personas & Storyboarding</h1>
       <h3> In this case study, I stepped into the shoes of everyday users to understand their experiences with public interfaces. By observing real-world interactions and constructing empathy maps, I developed personas and illustrated a complete user journey through a storyboard. </h3>
-      <h2> Interface rationale </h2>
+      <h2 id="rationale"> Interface rationale </h2>
       <h3>I have chosen a card-swiping kiosk, specifically ones seen in the mailroom. This interface requires users to simply swipe their card to initiate a service. While its operation appears straightforward, real-world observations reveal many moments of uncertainty and frustration. This thus allows me to delve into the nuances of the user experience and uncover both the strengths and challenges of this everyday interface. </h3>
-      <h2>Annotated Sketch</h2>
+      <h2 id="sketch">Annotated Sketch</h2>
       <img src="./assets/interface/sketch.jpg" alt="annotated kiosk interface" width="1000"/>
     </div>
-    <h2>What do the users think?</h2>
+    <h2 id="user-thoughts">What do the users think?</h2>
     <h3>To learn more, I interview three different users of this interface. Below is a summary of my questions and their responses.</h3>
     <div class="accordion-container">
       <details>
@@ -77,7 +88,7 @@
       </details>
     </div>
     <!-- code reference: https://www.w3schools.com/TAGs/tag_summary.asp -->
-    <h2>Constructing Personas</h2>
+    <h2 id="personas">Constructing Personas</h2>
     <h3>Using the observations and interviews so far, I constructed 2 personas by creating four-quadrant empathy maps.</h3>
     <div class="slideshow-container">
       <div class="mySlides fade">
@@ -128,10 +139,10 @@ function showSlides(n) {
 }
     </script>
     <!-- code reference: https://www.w3schools.com/howto/howto_js_slideshow.asp -->
-    <h2> Storyboard </h2>
+    <h2 id="storyboard"> Storyboard </h2>
     <h3>Through the persona "Jolie", I created a storyboard documenting her entire user journey with this interface.</h3>
     <img src="./assets/interface/storyboard.png" alt="storyboard" width="1000"/>
-
+  </div>
 </body>
   <footer>
     <p>© 2025 Mia Nguyen</p>
